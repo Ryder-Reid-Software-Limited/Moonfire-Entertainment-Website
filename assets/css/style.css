@@ -555,9 +555,36 @@ textarea.input-field {
 .footer { padding-block: 40px; }
 
 .copyright { margin-block-end: 12px; }
-
 .footer .social-link { color: var(--charcoal); }
+/* Style the footer */
 
+
+/* Style the flags */
+.flag {
+  width: 50px;
+  /* Adjust the width of the flags as needed */
+  margin-right: 10px;
+  display: inline-block; /* Ensure the image is displayed as a block element */
+  margin: 5 auto;
+}
+
+/* Style the text within the footer */
+.acknowledgement p {
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+    /* Adjust the font size as needed */
+}
+
+.acknowledgement {
+  text-align: center;
+}
+
+.mflogo {
+  width:150px; 
+  margin-right: 10px; 
+   text-align: center;
+}
 
 
 
