@@ -1,48 +1,83 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <style>
-        /* Style the footer */
-        footer {
-            background-color: #333;
-            /* Background color for the footer */
-            color: #fff;
-            /* Text color */
-            padding: 20px;
-            /* Padding around the content */
-            text-align: center;
-            /* Center-align the text */
-            border-bottom-left-radius: 0.35em;
-            border-bottom-right-radius: 0.35em;
-            border-top-right-radius: 0.35em;
-            border-top-left-radius: 0.35em;
-        }
-
-        /* Style the flags */
-        .flag {
-            width: 50px;
-            /* Adjust the width of the flags as needed */
-            margin-right: 10px;
-            /* Add some spacing between the flags and text */
-        }
-
-        /* Style the text within the footer */
-        .acknowledgement p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            /* Adjust the font size as needed */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Region Selector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    #regionSelector {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .regionButton {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .regionButton:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
-
 <body>
-    <footer>
-        <div class="acknowledgement">
-            <img src="assets/images/aboriginal_flag_1_0.png" alt="Aboriginal Flag" class="flag">
-            <img src="assets/images/TSI_flag.jpg" alt="Torres Strait Islander Flag" class="flag">
-            <p>Moonfire Entertainment&reg; acknowledges the five traditional owners of the 
-                Wimmera Southern Mallee Region; the
-                  Wotjobaluk, Jaadwa, Jadawadjali, Wergaia and Jupagulk people. We pay our respects to the elders, both
-                    past and present, and emerging.</p></div>
-        
+
+<div id="regionSelector">
+  <p>Please select your region:</p>
+  <a href="./index.html">
+  <button class="regionButton"  >ANZ</button>
+</a>
+<a href="./503.html">
+    <button class="regionButton"  >USA</button>
+  </a>
+  <a href="./503.html">
+    <button class="regionButton"  >UK</button>
+  </a>
+</div>
+
+<script>
+  function redirectToRegion(region) {
+    switch (region) {
+      case "anz":
+        alert("Redirecting to ANZ page");
+        // Implement redirection logic for ANZ
+        break;
+      case "usa":
+        alert("Redirecting to USA page");
+        // Implement redirection logic for USA
+        break;
+      case "uk":
+        alert("Redirecting to UK page");
+        // Implement redirection logic for UK
+        break;
+      default:
+        alert("Invalid region selection");
+    }
+  }
+</script>
+
+</body>
+</html>
